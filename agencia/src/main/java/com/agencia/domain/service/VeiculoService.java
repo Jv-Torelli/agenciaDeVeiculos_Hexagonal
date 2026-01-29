@@ -12,8 +12,8 @@ import java.util.List;
  * SERVIÇO DE DOMÍNIO
  * Esta classe contém a LÓGICA DE NEGÓCIO da aplicação.
  * Características importantes:
- * 1. IMPLEMENTA a porta de entrada (VeiculoInputPort)
- * 2. USA a porta de saída (VeiculoOutputPort) via construtor
+ * 1. IMPLEMENTA a input port (VeiculoInputPort)
+ * 2. USA a output port (VeiculoOutputPort) fazendo a injeção de dependencia via construtor
  * 3. NÃO conhece detalhes de implementação (JPA, REST, etc)
  * 4. Contém as regras de negócio e orquestra as entidades
  * O Spring vai injetar automaticamente a implementação do repositório

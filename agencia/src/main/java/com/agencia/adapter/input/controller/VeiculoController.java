@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
  * 1. Receber requisições HTTP (GET, POST, PUT, DELETE)
  * 2. Validar dados de entrada (@Valid)
  * 3. Converter DTOs -> Domain usando mapper
- * 4. Chamar o SERVICE através da PORTA (VeiculoInputPort)
+ * 4. Chamar o SERVICE através da PORTA de entrada (VeiculoInputPort)
  * 5. Converter Domain -> DTOs de resposta
  * 6. Retornar ResponseEntity com status HTTP apropriado
  * IMPORTANTE: O controller NÃO conhece a implementação do service.
