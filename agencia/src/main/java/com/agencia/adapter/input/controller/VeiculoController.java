@@ -20,11 +20,11 @@ import java.util.stream.Collectors;
  * 1. Receber requisições HTTP (GET, POST, PUT, DELETE)
  * 2. Validar dados de entrada (@Valid)
  * 3. Converter DTOs -> Domain usando mapper
- * 4. Chamar o SERVICE através da PORTA (VeiculoServicePort)
+ * 4. Chamar o SERVICE através da PORTA (VeiculoInputPort)
  * 5. Converter Domain -> DTOs de resposta
  * 6. Retornar ResponseEntity com status HTTP apropriado
  * IMPORTANTE: O controller NÃO conhece a implementação do service.
- * Ele usa apenas a INTERFACE (VeiculoServicePort).
+ * Ele usa apenas a INTERFACE (VeiculoInputPort).
  * O Spring injeta a implementação automaticamente.
  */
 @RestController
@@ -33,7 +33,7 @@ public class VeiculoController {
 
     /**
      * Dependência da PORTA de entrada (interface)
-     * O controller não conhece VeiculoService, apenas VeiculoServicePort
+     * O controller não conhece VeiculoService, apenas VeiculoInputPort
      */
     private final VeiculoInputPort veiculoInputPort;
     private final VeiculoDTOMapper mapper;
